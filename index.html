@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javaScript Questions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./MDB-Free/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./MDB-Free/css/mdb.min.css">
+</head>
+<body>
+    
+    <div class="">
+        <div class=>
+          <div class=>
+          <div class="card">
+            
+            <div class="card-body">
+            <div class="form-group">
+              <div class="col-sm-4">
+                    <label>1. What's the output?</label>
+                    <p>
+                        <code>
+                            function sayHi() {
+                            console.log(name);
+                            console.log(age);<br/>
+                            var name = "Josephine";<br/>
+                            let age =19 ;<br/>
+                            } <br/>
+
+                            sayHi();
+                        </code>
+                    </p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                        <label class="form-check-label" for="materialUnchecked">A: Josephine and undefined</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                        <label class="form-check-label" for="materialUnchecked">B: Josephine and ReferenceError</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                        <label class="form-check-label" for="materialUnchecked">C: ReferenceError and 19</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                        <label class="form-check-label" for="materialUnchecked">D: undefined and ReferenceError</label>
+                    </div>
+              </div>
+              <br>
+              <div class="col-sm-4">
+                <label>2. What's the output?</label>
+                <p>
+                    <code>
+                        for (var i = 0; i < 3; i++) {<br>
+                            setTimeout(() => console.log(i), 1);<br>
+                          } <br>
+                          
+                          for (let i = 0; i < 3; i++) {<br>
+                            setTimeout(() => console.log(i), 1);<br>
+                          }
+                    </code>
+                </p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">A: 0 1 2 and 0 1 2 </label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">B: 0 1 2 and 3 3 3</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">C: 3 3 3 and 0 1 2</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">D: return and error</label>
+                </div>
+          </div>
+
+          <br>
+              <div class="col-sm-4">
+                <label>3. What's the output?</label>
+                <p>
+                    <code>
+                        +true;<br>
+                        !"Lydia";
+                    </code>
+                </p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">A: 1 and false</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">B: false and NaN</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">C: null and NaN</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">D: false and false</label>
+                </div>
+          </div>
+          <br>
+              <div class="col-sm-4">
+                <label>4. What's the output?</label>
+                <p>
+                    <code>
+                        const shape = {<br>
+                            radius: 10,<br>
+                            diameter() {<br>
+                              return this.radius * 2;<br>
+                            },<br>
+                            perimeter: () => 2 * Math.PI * this.radius <br>
+                          };<br>
+                          
+                          shape.diameter();<br>
+                          shape.perimeter();<br>
+                    </code>
+                </p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">A: 20 and 62.83185307179586</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">B: 20 and NaN</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">C: 20 and 63</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                    <label class="form-check-label" for="materialUnchecked">D: NaN and 63</label>
+                </div>
+                <button type="button" d="centralModalSm" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">
+                        Launch demo modal
+                      </button>
+                <!-- Central Modal Small -->
+                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    <script>
+        // popovers Initialization
+        $(function () {
+        $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
